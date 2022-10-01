@@ -1,4 +1,4 @@
-from UITws_v1 import UITws_v1
+from word_segmentation.UITws_v1 import UITws_v1
 
 def word_segment(texts):
     model = UITws_v1('base_sep_sfx.pkl')
