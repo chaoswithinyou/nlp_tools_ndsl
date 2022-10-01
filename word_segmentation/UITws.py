@@ -5,6 +5,6 @@ def word_segment(texts, single_text=False):
     if single_text==False:
         segmented_texts = model.segment(texts=texts, pre_tokenized=True)
     else:
-        texts = nlkt.sent_tokenize(texts)
+        texts = nltk.sent_tokenize(texts)
         segmented_texts = model.segment(texts=texts, pre_tokenized=True)
     return segmented_texts
