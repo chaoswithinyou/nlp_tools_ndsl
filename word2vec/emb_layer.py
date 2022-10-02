@@ -3,7 +3,6 @@ import torch.nn as nn
 from tqdm import tqdm
 from nltk import tokenize
 
-
 def word2ids(sen_list, word2idx, maxlen, vector_size):
     x = torch.zeros((len(sen_list),1,maxlen))
     for i in tqdm(range(len(sen_list))):
